@@ -11,8 +11,8 @@
 #include <ESPmDNS.h>
 
 // -------------------- CẤU HÌNH WIFI ------------------------
-char ssid[] = "Cuongg";
-char pass[] = "00000000";
+char ssid[] = "";
+char pass[] = "";
 const char* ap_ssid = "ESP32_SPO2_Monitor";
 const char* ap_pass = "12345678";
 
@@ -475,4 +475,5 @@ void setupWebServer() {
         request->send_P(200, "text/html", HTML_PAGE);
     });
     server.begin(); 
+
 }
